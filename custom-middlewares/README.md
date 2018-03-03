@@ -2,6 +2,8 @@
 
 To run extending framework example with local database configure the following envaironment variables
 
+In this example we desabled the JWT with the `PREST_JWT_DEFAULT=false` environment variable.
+
 ```console
 export PREST_PG_USER=user_name
 export PREST_PG_PASS=user_password
