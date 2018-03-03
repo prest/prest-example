@@ -40,7 +40,10 @@ func pong(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func customMiddleware(w http.ResponseWriter, r *http.Request, next http.HandlerFunc) {
+func customMiddleware(
+	w http.ResponseWriter,
+	r *http.Request,
+	next http.HandlerFunc) {
 	_, err := fmt.Fprintln(w, "Calling custom middleware")
 	if err != nil {
 		fmt.Println(err)

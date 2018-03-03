@@ -1,6 +1,6 @@
 # Run Extending (framework)
 
-To run extending framework example with local database configure the following envaironment variables
+To run extending framework example with local database configure the following environment variables
 
 In this example we desabled the JWT with the `PREST_JWT_DEFAULT=false` environment variable.
 

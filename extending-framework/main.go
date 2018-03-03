@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/prest/adapters/postgres"
@@ -30,5 +31,8 @@ func main() {
 }
 
 func pong(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Pong!"))
+	_, err := w.Write([]byte("Pong!"))
+	if err != nil {
+		fmt.Println(err)
+	}
 }
